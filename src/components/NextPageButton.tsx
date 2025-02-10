@@ -25,6 +25,11 @@ export default function NextPageButton({ nextPage, label }: NextPageButtonProps)
         border: "none",
         borderRadius: "5px",
         cursor: "pointer",
+        justifyContent: "center",
+        alignItems: "center",
+        display: "flex",
+
+        justifyItems:"space-between",
       }}
     >
       {label}

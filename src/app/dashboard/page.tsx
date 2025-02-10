@@ -33,6 +33,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+import Sidebar from "@/components/sidebar"
 const chartData = [
   { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
   { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
@@ -84,61 +85,7 @@ export default function Component() {
       
 
 {/* Sidebar section*/}
-    <section className="rounded-xl bg-white ml-5">
-        <div className="sidebar">
-        <div className="menu-section">
-          <p className="section-title">MAIN MENU</p>
-          <ul className="menu-list">
-            <li className="menu-item active">
-              <span className="menu-icon">🏠</span>
-              <span className="menu-text">Dashboard</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Car Rent</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Insight</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Reimburse</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Inbox</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Calendar</span>
-            </li>
-          </ul>
-        </div>
-        <div className="menu-section">
-          <p className="section-title">PREFERENCES</p>
-          <ul className="menu-list">
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Settings</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Help & Center</span>
-            </li>
-            <li className="menu-item">
-              <span className="menu-icon"></span>
-              <span className="menu-text">Dark Mode</span>
-            </li>
-          </ul>
-        </div>
-        <div className="logout-section mt-10">
-          <span className="menu-icon"></span>
-          <span className="menu-text">Log Out</span>
-        </div>
-      </div>
-      
-      </section>
+  <Sidebar />  
 
 
 

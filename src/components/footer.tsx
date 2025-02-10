@@ -52,7 +52,7 @@ export default function Footer() {
           </ul>
         </div>
         {/* Socials Column */}
-        <div className="footer-column ml-10">
+        <div className="footer-column ml-8">
           <h4>Socials</h4>
           <ul>
             <li>Discord</li>

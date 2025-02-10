@@ -1,11 +1,9 @@
 import Image from "next/image"
 
 import NextPageButton from "@/components/NextPageButton";
-import Link from "next/link";
+
 import Car from "@/public/car02.png"
 import Car4 from "@/public/car4.png"
-import Pickup from "@/public/Pick-Up.png"
-import Dropoff from "@/public/Drop-Off.png"
 import { HiOutlineSwitchVertical } from "react-icons/hi";
 import Spec from "@/public/Spesification(7).png"
 import Spec2 from "@/public/Spesification(9).png"
@@ -17,19 +15,14 @@ import Spec10 from "@/public/Spesification(10).png"
 import Spec11 from "@/public/Spesification(11).png"
 import Spec14 from "@/public/Spesification(14).png"
 
-import Spec13 from "@/public/Spesification(13).png"
+
 import Spec15 from "@/public/Spesification(15).png"
 import Spec12 from "@/public/Spesification(12).png"
 import Car0 from "@/public/Car(2).png"
-import Car5 from "@/public/Car(5).png"
-import Car6 from "@/public/Car(6).png"
-import Car7 from "@/public/Car(7).png"
-import Car8 from "@/public/Car(8).png"
-import Car9 from "@/public/Car(9).png"
 
-import Car10 from "@/public/Car(10).png"
 import Car11 from "@/public/Car(11).png"
 import Car12 from "@/public/Car(12).png"
+import Sidebar from "@/components/sidebar";
 export default function Details(){
     return(
 
@@ -40,103 +33,8 @@ export default function Details(){
      <section className="flex mr-5">
 <section className="px-5 pt-5 pb-10">
 
-
-  {/* Filter Section */}
-    
-  <meta charSet="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sidebar Filter</title>
-  {/* Sidebar */}
-  <div className="w-[250px] h-[auto] bg-white pl-5">
-    {/* Type Section */}
-    <div className="mb-8">
-      <h2 className="text-xs font-bold text-gray-400 mb-4 pt-10">TYPE</h2>
-      <ul className="space-y-2 font-bold">
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">Sport (10)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">SUV (12)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">MPV (6)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">Sedan (20)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">Coupe (14)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">Hatchback (14)</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-    {/* Capacity Section */}
-    <div className="mb-8">
-      <h2 className="text-xs font-bold text-gray-400 mb-4">CAPACITY</h2>
-      <ul className="space-y-2 font-bold">
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">2 Person (10)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">4 Person (14)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">6 Person (12)</span>
-          </label>
-        </li>
-        <li>
-          <label className="flex items-center space-x-2">
-            <input type="checkbox" className="form-checkbox text-blue-500" />
-            <span className="text-gray-600">8 or More (16)</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-    {/* Price Section */}
-    <div>
-      <h2 className="text-xs font-bold text-gray-400 mb-4">PRICE</h2>
-      <div className="flex items-center justify-between pr-5 text-sm text-gray-600">
-        <span>Min: $0</span>
-        <span>Max: $100.00</span>
-      </div>
-      <input
-        type="range"
-        min={0}
-        max={100}
-        defaultValue={50}
-        className="w-full mr-5 pr-5 py-10"
-      />
-    </div>
-
-    </div>
+<Sidebar />
+  
 </section>
 
 

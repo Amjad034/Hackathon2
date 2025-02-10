@@ -68,7 +68,7 @@ export default function Home() {
    <a href="#" className="button bg-blue-400 p-3 5">
      Rental Car
    </a>
-   <div className="ml-20 mt-3">
+   <div className="ml-20 mt-3 ml-4">
     <Image src={Car4} alt="car"/></div>
   
 
@@ -292,7 +292,7 @@ export default function Home() {
       <div className="h-[62px] w-[242px]  py-10 px-5 items-center mb-5">
       <Image src={Car} alt="car"/>
       </div>
-      <div className="mt-24 w-48 ml-5 mb-5">
+      <div className="my-6 w-40 ml-5">
       <Image src={Spec} alt="specs"/></div>
       
         
